@@ -1,4 +1,4 @@
-from imagecorruptions import corrupt, get_corruption_names
+from imgcorr import corrupt, get_corruption_names
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
