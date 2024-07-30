@@ -1,2 +1,2 @@
-include imagecorruptions/frost/*.png
-include imagecorruptions/frost/*.jpg
+include imgcorr/frost/*.png
+include imgcorr/frost/*.jpg

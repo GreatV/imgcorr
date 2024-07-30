@@ -1,12 +1,12 @@
-# imagecorruptions
+# imgcorr
 This package provides a set of corruptions that can be applied to images in order to benchmark the robustness of neural networks. These corruptions are not meant to be used as training data augmentation but rather to test the networks against unseen perturbations. For more information have a look at the paper on the original corruption package by Hendrycks and Dietterich: [Benchmarking Neural Network Robustness to Common Corruptions and Surface Variations](https://arxiv.org/abs/1807.01697).
 
-![image corruptions](https://raw.githubusercontent.com/bethgelab/imagecorruptions/master/assets/corruptions_sev_3.png?token=ACY4L7YQWNOLTMRRO53U6FS5G3UF6)
+![image corruptions](https://raw.githubusercontent.com/greatv/imgcorr/master/assets/corruptions_sev_3.png?token=ACY4L7YQWNOLTMRRO53U6FS5G3UF6)
 
 ## Installation and Usage
-This package is pip installable via `pip3 install imagecorruptions`. An example of how to use the corruption function is given below:
+This package is pip installable via `pip3 install imgcorr`. An example of how to use the corruption function is given below:
 ```python
-from imagecorruptions import corrupt
+from imgcorr import corrupt
 ...
 corrupted_image = corrupt(image, corruption_name='gaussian_blur', severity=1)
 ...
@@ -14,7 +14,7 @@ corrupted_image = corrupt(image, corruption_name='gaussian_blur', severity=1)
 Looping over all available corruptions can be done either by name or by index:
 ```python
 # via name
-from imagecorruptions import get_corruption_names
+from imgcorr import get_corruption_names
 for corruption in get_corruption_names():
     for severity in range(5):
         corrupted = corrupt(image, corruption_name=corruption, severity=severity+1)
@@ -31,7 +31,7 @@ Note that the first 15 image corruptions are the common corruptions (the ones yo
 
 ## Citation
 
-If you use our code or the imagecorruptions package, please consider citing:
+If you use our code or the imgcorr package, please consider citing:
 ```
 @article{michaelis2019dragon,
   title={Benchmarking Robustness in Object Detection: 
