@@ -32,4 +32,4 @@ dependencies = [
 Homepage = "https://github.com/greatv/imgcorr"
 
 [tool.setuptools]
-packages = ["imgcorr"]
+packages = ["imgcorr", "imgcorr.frost"]
